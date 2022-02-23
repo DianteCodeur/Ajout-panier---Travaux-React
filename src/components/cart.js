@@ -41,7 +41,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
       ))}
       <div className="total">
         <span>Total Price of your Cart</span>
-        <span>Euro - {price}</span>
+        <span>Euros - {price}</span>
       </div>
     </article>
   );

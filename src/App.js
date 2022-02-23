@@ -7,8 +7,6 @@ const App = () => {
   const [cart, setCart] = useState([]);
   const handleClick = (item) => {
     setCart([...cart, item]);
-    // cart.push(item);
-    console.log(cart);
   };
   const handleChange = (item, d) => {
     const ind = cart.indexOf(item);
@@ -20,7 +18,7 @@ const App = () => {
   };
   return (
     <React.Fragment>
-      <Navbar setShow={setShow} />
+      <Navbar setShow={setShow} size={cart.length} />
       {show ? (
         <Shop handleClick={handleClick} />
       ) : (
