@@ -1,3 +1,4 @@
+//list de données utilisés pour le shop
 const list = [
   {
     id: 1,
